@@ -29,9 +29,11 @@
   - brew
 
 - name: Install homebrew cask packages
-  homebrew_cask:
-    name: '{{ item }}'
-    state: installed
+# TODO: re-enable after homebrew_cask ansible module is fixed
+#  community.general.homebrew_cask:
+#    name: '{{ item }}'
+#    state: installed
+  command: brew install --cask {{ item}}
   loop: '{{ homebrew_cask_packages }}'
   tags:
   - brew
@@ -47,7 +49,7 @@
   register: pyenv_install_result
   failed_when: >
     pyenv_install_result.rc != 0 and
-    pyenv_install_result.stderr_lines != ["pyenv: /Users/chainz/.pyenv/versions/" + item + " already exists"]
+    pyenv_install_result.stderr_lines != ["pyenv: /Users/tkuthan/.pyenv/versions/" + item + " already exists"]
   loop: '{{ pyenv_python_versions }}'
   tags:
   - python

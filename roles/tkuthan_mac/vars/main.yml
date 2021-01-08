@@ -1,0 +1,73 @@
+homebrew_taps:
+- cognitive-intelligence/homebrew-aws-saml-login-tap git@wwwin-github.cisco.com:cognitive-intelligence/homebrew-aws-saml-login-tap.git
+- AdoptOpenJDK/openjdk
+
+homebrew_package_removals: []
+
+homebrew_packages:
+- ammonite-repl
+- apache-spark
+- aws-saml-login
+- autoconf
+- automake
+- coreutils
+- gdbm
+- gmp
+- gnupg
+- helm
+- jq
+- k9s
+- kubernetes-cli
+- maven
+- nvm
+- openssl
+- openjdk
+- openjdk@11
+- parallel
+- pyenv
+- pypy
+- python
+- sbt
+- shellcheck
+- socat
+- sqlite
+- tree
+- wget
+- zlib
+
+homebrew_cask_packages:
+- adoptopenjdk8
+- adoptopenjdk11
+- chromedriver
+- docker
+- evernote
+- gimp
+- iterm2
+- rectangle
+
+pyenv_python_versions:
+# In precedence order
+- 3.9.0
+- 3.8.5
+- 3.7.8
+#- 3.6.11
+#- 3.5.9
+#- 3.4.10
+#- 2.7.18
+#- 3.10-dev
+#- pypy3.6-7.1.1
+#- pypy2.7-7.1.1
+
+pip_packages:
+- awscli
+- boto
+- boto3
+- ipdb
+- ipython
+- pipenv
+- requests
+- s3cmd
+- wheel
+- jupyter
+
+gem_packages: []

@@ -1,0 +1,5 @@
+- name: Bash as default shell
+  user:
+    name: tkuthan
+    shell: /bin/bash
+

@@ -1,0 +1,5 @@
+- name: Basic config
+  import_tasks: config.yml
+
+- name: Install things
+  import_tasks: installs.yml
